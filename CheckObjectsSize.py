@@ -2,7 +2,7 @@ import os
 
 UserPath = input('Введите путь: ') 
 
-def get_size(start_path = '.'): #класс для подсчета колчиества файлов в каталоге, взят из http://python.su/forum/topic/22115/?page=1#post-113774
+def get_size(start_path = '.'): #функция для подсчета суммарного веса файлов в каталоге, взят из http://python.su/forum/topic/22115/?page=1#post-113774
     total_size = 0
     for dirpath, dirnames, filenames in os.walk(start_path):
         for f in filenames:
